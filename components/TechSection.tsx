@@ -1,8 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { FileText, Download, ArrowRight } from 'lucide-react';
 
 export const TechSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+
+  const specBookURL = "https://drive.google.com/drive/folders/1SUGH4sUpZUxEJ9EuRFo9DOudVnR_dxOS"
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -42,22 +46,30 @@ export const TechSection = () => {
                 Participants engineer vehicles equipped with infrared arrays for micro-second decision making. The core challenge: maintaining traction while executing high-g turns.
                 </p>
                 
-                <div className="space-y-4 font-mono text-sm">
-                {[
-                    { key: "SENSORS", val: "IR Array / Lidar / Optical Flow" },
-                    { key: "CONTROL", val: "PID / Fuzzy Logic / Neural Net" },
-                    { key: "CHASSIS", val: "Carbon Fiber / 3D Printed / PCB" },
-                    { key: "POWER", val: "LiPo High-Discharge Cells" }
-                ].map((item, idx) => (
-                    <div 
-                        key={idx} 
-                        className="flex flex-col md:flex-row md:items-center justify-between border-b border-neutral-800 pb-2 hover:pl-2 transition-all cursor-crosshair gap-1 md:gap-0"
-                    >
-                        <span className="text-neutral-500 text-xs md:text-sm uppercase tracking-wider">{item.key}</span>
-                        <span className="text-white font-bold md:text-right">{item.val}</span>
-                    </div>
-                ))}
-                </div>
+                {/* Specification Book Link */}
+                <a 
+                    href={specBookUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative inline-flex items-center gap-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 font-bold uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(220,38,38,0.5)] overflow-hidden"
+                >
+                    {/* Animated background effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                    
+                    <FileText className="w-6 h-6 relative z-10" />
+                    <span className="relative z-10 text-sm md:text-base">View Full Specifications</span>
+                    <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
+                    
+                    {/* Corner accents */}
+                    <div className="absolute top-0 left-0 w-2 h-2 border-t-2 border-l-2 border-white/50"></div>
+                    <div className="absolute bottom-0 right-0 w-2 h-2 border-b-2 border-r-2 border-white/50"></div>
+                </a>
+
+                {/* Optional: Small download hint */}
+                <p className="text-neutral-600 text-xs mt-3 font-mono flex items-center gap-2">
+                    <Download className="w-3 h-3" />
+                    PDF Document • Technical Regulations & Standards
+                </p>
             </div>
 
 

@@ -8,6 +8,7 @@ export const Hero = () => {
     setIsVisible(true);
   }, []);
 
+
   return (
     <div id="home" className="relative w-full min-h-screen md:h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
