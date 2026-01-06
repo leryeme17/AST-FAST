@@ -93,7 +93,7 @@ const EventsSlider = () => {
           </span>
         </div>
         <h2 className="text-5xl md:text-7xl font-black text-white italic uppercase tracking-tighter leading-[0.9]">
-          Upcoming <span className="text-red-600">Events</span>
+          Previous <span className="text-red-600">Events</span>
         </h2>
       </div>
 
