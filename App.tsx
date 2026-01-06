@@ -4,7 +4,7 @@ import { Hero } from './components/Hero';
 import { AboutCompetition } from './components/AboutCompetition';
 import { TechSection } from './components/TechSection';
 import { Specs } from './components/Specs';
-import { RegistrationForm } from './components/RegistrationForm';
+import  RegistrationForm  from './components/RegistrationForm';
 import { FAQ } from './components/FAQ';
 import  History  from './components/History';
 import { AboutUs } from './components/AboutUs';
