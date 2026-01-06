@@ -23,21 +23,19 @@ export const AboutCompetition = () => {
 
   const cards = [
     {
+      id: "01",
       icon: Target,
       title: "Line Following",
       desc: "High-speed navigation on complex black/white tracks."
     },
     {
+      id: "02",
       icon: Zap,
       title: "Speed Trap",
       desc: "Pure velocity challenges on straightaways. Push your robots to the limit."
     },
     {
-      icon: Award,
-      title: "Divisions",
-      desc: "Stock and Modified classes ensure fair play for all engineering levels."
-    },
-    {
+      id: "03",
       icon: Flag,
       title: "Track Sessions",
       desc: "Regular testing and development days. Push the limits and refine your skills."
@@ -113,7 +111,7 @@ export const AboutCompetition = () => {
            {/* NOTE: Using margin-right on cards instead of gap on parent for seamless loop physics */}
            <div className="flex w-max animate-scroll-left pl-6">
               {fullRowData.map((card, idx) => (
-                  <MarqueeCard key={`r1-${idx}`} card={card} />
+                  <MarqueeCard key={`row1-${card.id}-${idx}`} card={card} />
               ))}
            </div>
         </div>
@@ -125,7 +123,7 @@ export const AboutCompetition = () => {
 
            <div className="flex w-max animate-scroll-right pl-6">
               {row2Data.map((card, idx) => (
-                  <MarqueeCard key={`r2-${idx}`} card={card} />
+                  <MarqueeCard key={`row2-${card.id}-${idx}`} card={card} />
               ))}
            </div>
         </div>
@@ -137,7 +135,7 @@ export const AboutCompetition = () => {
 
            <div className="flex w-max animate-scroll-left pl-6">
               {row3Data.map((card, idx) => (
-                  <MarqueeCard key={`r3-${idx}`} card={card} />
+                  <MarqueeCard key={`row3-${card.id}-${idx}`} card={card} />
               ))}
            </div>
         </div>

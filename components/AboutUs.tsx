@@ -41,6 +41,7 @@ export const AboutUs = () => {
             </p>
             <p>
                 The club's mission is to provide a practical engineering environment where members develop deep technical expertise, professional skills, and teamwork through collaborative hands-on projects and specialized workshops, we exist to transform theoretical knowledge into applied engineering, preparing the next generation of innovators in the field of autonomous technologies.
+            </p>
         </div>
 
         {/* Read More Button (Mobile Only) */}
