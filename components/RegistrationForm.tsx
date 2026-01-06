@@ -38,7 +38,7 @@ export default function RegistrationForm() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwGYbaS3N9Ce7tbv7CA0EpJcJWC0e6fJLTy6jIXAfInZTHHdXqMXe_dVwtgZY05G5M/exec';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz9e5Uac5AqVMMkETo3_Xy6HVZ0st3Vzvvb10NaPWc4EMFdGLFRVnNaFCiRWNdBTPRP/exec';
 
     try {
       await fetch(SCRIPT_URL, {
