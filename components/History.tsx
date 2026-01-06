@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import workshopImage from '../pics/workshop.jpg';
+import opendayImage from '../pics/openday.jpg';
+import seedImage from '../pics/seed.jpg';
+import nestImage from '../pics/nest.jpg';
+import birthdayImage from '../pics/birthday.jpg';
+import afrobotImage from '../pics/afrobot.jpg';
+
 
 const EventsSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,39 +15,40 @@ const EventsSlider = () => {
   const events = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-      title: "Season Kickoff 2025",
-      description: "Join us for the official start of the racing season with team presentations and tech unveiling."
+      image: nestImage,
+      title: "Nest 2025",
+      description: "Our club`s hackathon which took place on 9-12 April 2025 with 200 participants competing in robotics, IoT and AI."
+
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
-      title: "Technical Workshop",
-      description: "Deep dive into telemetry systems, sensor arrays, and autonomous navigation algorithms."
+      image: opendayImage,
+      title: "Open Day 2024/2025",
+      description: "AST’s first event where we presented the vision of the club and some projects done by the founders. First edition was on 19/10/2024 and the second on 22/09/2025."
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-      title: "Track Testing Day",
-      description: "Live testing sessions where teams optimize their vehicles for maximum performance."
+      image: seedImage,
+      title: "Seed 2025",
+      description: "the event that exhibits projects and clubs from all arround Algeria. SEED1 was on 8/2/2025 where 20 clubs have attended, SSED2 on 6/12/2025: more than 30 clubs came for the exhibition."
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80",
-      title: "Championship Finals",
-      description: "The ultimate showdown. Top teams compete for the championship trophy and glory."
+      image: afrobotImage,
+      title: "AFROBOT 2025",
+      description: "with the collaboration of 4 other clubs and under the patronage of the Governor of Algiers and the Youth Center, four robotic competitions was organized. AST was the host of the AllTerrain robot competition."
     },
     {
       id: 5,
-      image: "https://images.unsplash.com/photo-1581092583537-20d51b3d4c0b?w=800&q=80",
-      title: "Innovation Showcase",
-      description: "Present your breakthrough designs and technologies to industry experts and sponsors."
+      image: workshopImage,
+      title: "Workshops",
+      description: "AST provides series of workshops and trainings in various fields. We hosted workshops in: Arduino, Python, Micropython, Latex, UI/UX design, Video editing, git/gitHub."
     },
     {
       id: 6,
-      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80",
-      title: "Awards Ceremony",
-      description: "Celebrating excellence in engineering, teamwork, and competitive spirit."
+      image: birthdayImage,
+      title: "ASTBirthday 2025",
+      description: "Celebrating the first birthday of the club on 18/10/2025 by organizing a small robotic competition, presenting our club’s team projects and a lot of fun activities."
     }
   ];
 
