@@ -41,20 +41,12 @@ export default function RegistrationForm() {
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwGYbaS3N9Ce7tbv7CA0EpJcJWC0e6fJLTy6jIXAfInZTHHdXqMXe_dVwtgZY05G5M/exec';
 
     try {
-      const response = await fetch(SCRIPT_URL, {
+      await fetch(SCRIPT_URL, {
         method: 'POST',
+        mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
-      
-      const result = await response.json();
-      
-      if (result.status === 'success') {
-        setSubmitStatus('success');
-      } else {
-        console.error('Server error:', result.message);
-        setSubmitStatus('error');
-      }
       
       setSubmitStatus('success');
       setFormData({
