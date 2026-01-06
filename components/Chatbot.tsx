@@ -10,7 +10,7 @@ interface Message {
 export const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'model', text: 'Hello! I can help you with questions about the F-AST Racing Championship rules, schedule, or registration.' }
+    { role: 'model', text: 'Hello! I can help you with questions about the F-AST Racing Competition rules, schedule, or registration.' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -44,22 +44,20 @@ export const Chatbot = () => {
                 - If you don't know the answer based on the provided info, suggest they check the relevant section on the page.
 
                 **Website Information:**
-                - **Event:** F-AST Racing Championship (Season 2025).
+                - **Event:** F-AST High-Speed Line Follower competition.
                 - **Concept:** Autonomous line-following robot racing.
-                - **Schedule:** Qualifiers on March 15th, Grand Prix on March 16th.
+                - **Schedule:** to be announced soon.
                 - **Competitions:** Line Following (Navigation/PID) and Speed Trap (Velocity).
                 - **Divisions:** Stock and Modified classes.
                 - **Tech Specs:** 
-                    - Max robot dimensions: 25cm x 25cm x 25cm.
-                    - Track: Vinyl matte finish with a 20mm black line on white substrate.
-                    - Sensors: IR Array, Lidar, Optical Flow allowed.
-                    - Power: LiPo High-Discharge Cells.
-                - **Rules:** Time trial format. +5s penalty for manual resets. Robots must be fully autonomous (no remote control).
+                    - Max robot dimensions: 20cm x 30cm x 15cm.
+                    - Track: Vinyl matte finish with a black line on white substrate.
+                - **Rules:** All robots must be originally designed and built by the participating team, with pre-built robots, commercial kits, and Lego systems strictly forbidden; they must operate in full autonomy from start to finish without any remote control, off-board computation, or external assistance, and be powered exclusively by onboard batteries, while also adhering to physical requirements ensuring they cause no damage to the track surface and maintain structural integrity throughout the entire run.
                 - **Registration:** Open now. Levels: Beginner, Intermediate, Advanced.
-                - **History:** 
-                    - 2024: Formula 1 Championship (45 teams).
-                    - 2023: Robot Racing League (32 teams).
-                    - 2022: Autonomous Racing Cup (28 teams).
+                - **Duration:** Each run lasts 3 minutes, except the final which is 5 minutes.
+                - **Judging:** Based on fastest time and accuracy in line following.
+                - **Prizes:** Awards for Top 3 teams, speed based.
+                - **Contact:** Follow on Instagram @ast_.club for updates.
                 - **FAQ:** 
                     - Any microcontroller (Arduino, Raspberry Pi) and language (C++, Python) allowed.
                     - Minor repairs allowed in pits; no major structural changes during event.

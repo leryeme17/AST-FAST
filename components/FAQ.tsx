@@ -51,15 +51,15 @@ export const FAQ = () => {
   const faqs = [
     {
       question: "What are the robot specifications?",
-      answer: "Robots must be fully autonomous with maximum dimensions of 25cm x 25cm x 25cm. They should use sensors (infrared, optical, or camera-based) to follow the track line. Any microcontroller platform is allowed (Arduino, Raspberry Pi, etc.)."
+      answer: "Robots must be fully autonomous with maximum dimensions of 20cm x 30cm x 15cm. They should use sensors (infrared, optical, or camera-based) to follow the track line. Any microcontroller platform is allowed (Arduino, Raspberry Pi, etc.)."
     },
     {
       question: "How do I register my team?",
-      answer: "Complete the registration form above with your team details. Once submitted, you will receive a confirmation email with further instructions and payment details for the entry fee."
+      answer: "Complete the registration form above with your team details. Then follow us on Instagram for more announcements about sending emails for confirmation."
     },
     {
       question: "What is the competition format?",
-      answer: "The competition consists of a qualifying round followed by knockout stages. Teams will have multiple attempts to set their best time on the track."
+      answer: "The competition is conducted in two phases: Phase 1 is an online qualification held via Discord. Teams must design, build, and document a line follower robot from scratch (including 3D modeling, PCB design, and assembly). They must also design a test track and submit a video showing their robot successfully following straight, curved, and zigzag lines, plus navigating a color inversion section. The top 40 teams from Phase 1 advance to Phase 2, the final in-person competition on the official event day."
     },
     {
       question: "Can I modify my robot during the event?",
@@ -70,16 +70,12 @@ export const FAQ = () => {
       answer: "You can use any programming language supported by your hardware platform (C++, Python, etc.). The robot must run autonomously without remote control."
     },
     {
-      question: "Are there any prizes?",
-      answer: "Yes! There are cash prizes for the top 3 teams in each category, as well as awards for 'Best Design', 'Most Innovative Code', and 'Fastest Lap'."
-    },
-    {
         question: "What should I bring to the event?",
         answer: "Bring your robot, spare batteries, chargers, laptops for coding, tools for repairs, and extension cords. Power strips will be provided in the pit area."
     },
     {
-        question: "Is there a registration fee?",
-        answer: "Yes, there is a nominal team registration fee of $50 to cover event costs, materials, and prizes. This fee is per team, not per individual member."
+        question: "What is the qualification process?",
+        answer: "Qualification for the Finals is limited to four teams: the two fastest from each Semifinal group. The final track is the ultimate challenge, created by combining the four group-phase tracks (North, South, East, West) into a single unified \"Algeria's Track.\" This integrated layout tests a robot's maximum speed, stability, and consistency across all competition challenges, serving as the definitive benchmark to determine the champion. The top three fastest teams in the finals will be recognized as the competition winners.",
     },
   ];
 
