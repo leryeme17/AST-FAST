@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Instagram, Youtube, Linkedin, Github } from 'lucide-react';
+import { Instagram, Linkedin } from 'lucide-react';
+import astlogo from '../pics/white-logo.png';
 
 export const FollowUs = () => {
     const socialLinks = [
-        { icon: Instagram, href: "#", label: "Instagram" },
-        { icon: Youtube, href: "#", label: "Youtube" },
-        { icon: Github, href: "#", label: "Github" },
-        { icon: Linkedin, href: "#", label: "LinkedIn" },
+        { icon: Instagram, href: "https://www.instagram.com/ast_.club/", label: "Instagram" },
+        { icon: Linkedin, href: "https://www.linkedin.com/company/autonomous-systems-tech-club/", label: "LinkedIn" },
     ];
 
     const [isVisible, setIsVisible] = useState(false);
@@ -50,6 +49,15 @@ export const FollowUs = () => {
             <div className={`absolute top-0 right-0 h-2 bg-red-600 transition-all duration-1000 delay-500 ease-out ${isVisible ? 'w-24 md:w-48' : 'w-0'}`}></div>
             <div className={`absolute top-0 right-24 md:right-48 w-8 h-2 bg-red-800 skew-x-12 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-50 translate-y-0' : 'opacity-0 -translate-y-4'}`}></div>
 
+            {/* Logo in Top Right */}
+            <div className={`absolute top-4 md:top-6 right-4 md:right-6 z-20 transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-75'}`}>
+                <img 
+                    src={astlogo} 
+                    alt="Club Logo" 
+                    className="w-16 h-16 md:w-20 md:h-20 object-contain filter brightness-90 hover:brightness-110 transition-all duration-300"
+                />
+            </div>
+
             <div className="flex-1 text-left z-10 w-full">
                  {/* Label */}
                 <div className="flex items-center gap-3 mb-6">
@@ -59,12 +67,12 @@ export const FollowUs = () => {
 
                 {/* Headline */}
                 <h2 className="text-5xl md:text-7xl font-black text-white italic uppercase tracking-tighter mb-6 leading-[0.9]">
-                    JOIN THE <span className="text-red-600 inline-block hover:scale-105 transition-transform duration-300">PADDOCK</span>
+                    JOIN THE <span className="text-red-600 inline-block hover:scale-105 transition-transform duration-300">AST</span>
                 </h2>
                 
                 {/* Description */}
                 <p className="text-neutral-400 text-lg md:text-xl max-w-2xl font-normal leading-relaxed">
-                    Access real-time race data, pit wall strategies, and exclusive behind-the-scenes content from our engineering teams.
+                    When innovation knows no bounds.
                 </p>
             </div>
 

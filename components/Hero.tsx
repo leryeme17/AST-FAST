@@ -33,7 +33,7 @@ export const Hero = () => {
         <div className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-sm border border-red-600/30 bg-red-900/10 backdrop-blur-md mb-8 transition-all duration-1000 delay-300 transform -skew-x-12 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
             <div className="w-2 h-2 rounded-full bg-red-600 animate-pulse skew-x-12"></div>
             <span className="text-red-500 font-mono text-xs md:text-sm tracking-widest uppercase font-bold skew-x-12">
-                Season 2025 // Registration Open
+                Season 2026 // Registration Open
             </span>
         </div>
 
@@ -43,7 +43,7 @@ export const Hero = () => {
         </h1>
 
         <h2 className={`text-3xl md:text-5xl font-black text-white tracking-tighter italic uppercase mb-8 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            Racing Championship
+            High-Speed Line Follower competition
         </h2>
         
         <p className={`text-lg md:text-xl text-neutral-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed border-l-2 border-red-600 pl-6 text-left bg-black/40 backdrop-blur-sm py-4 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
