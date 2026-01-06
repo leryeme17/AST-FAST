@@ -38,7 +38,7 @@ export default function RegistrationForm() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    const SCRIPT_URL = 'https://docs.google.com/spreadsheets/d/1ouK5ssCS8hcjlKd2OFL0Moz_exeY6VGmus9ytVQrKUM/edit?gid=0#gid=0';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwGYbaS3N9Ce7tbv7CA0EpJcJWC0e6fJLTy6jIXAfInZTHHdXqMXe_dVwtgZY05G5M/exec';
 
     try {
       await fetch(SCRIPT_URL, {
