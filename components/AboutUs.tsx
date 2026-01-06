@@ -25,7 +25,7 @@ export const AboutUs = () => {
   return (
     <section ref={sectionRef} className="relative z-10 py-20 px-4 md:px-8 max-w-5xl mx-auto">
        <div className={`mb-12 text-center md:text-left transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        <h4 className="text-red-500 font-bold uppercase tracking-widest mb-2">The Team</h4>
+        <h4 className="text-red-500 font-bold uppercase tracking-widest mb-2">AST Team</h4>
         <h2 className="text-4xl md:text-5xl font-black text-white italic uppercase tracking-tighter">
             About <span className="text-neutral-600">Us</span>
         </h2>
