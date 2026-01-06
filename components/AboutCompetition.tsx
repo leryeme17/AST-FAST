@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Target, Zap, Award, Calendar, Cpu } from 'lucide-react';
+import { Target, Zap, Award, Flag, Cpu } from 'lucide-react';
 
 export const AboutCompetition = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,12 +25,12 @@ export const AboutCompetition = () => {
     {
       icon: Target,
       title: "Line Following",
-      desc: "High-speed navigation on complex black/white tracks using PID algorithms."
+      desc: "High-speed navigation on complex black/white tracks."
     },
     {
       icon: Zap,
       title: "Speed Trap",
-      desc: "Pure velocity challenges on straightaways. Push your motors to the limit."
+      desc: "Pure velocity challenges on straightaways. Push your robots to the limit."
     },
     {
       icon: Award,
@@ -38,9 +38,9 @@ export const AboutCompetition = () => {
       desc: "Stock and Modified classes ensure fair play for all engineering levels."
     },
     {
-      icon: Calendar,
-      title: "Race Weekend",
-      desc: "Qualifiers: March 15th. Grand Prix: March 16th. Don't miss the lights out."
+      icon: Flag,
+      title: "Track Sessions",
+      desc: "Regular testing and development days. Push the limits and refine your skills."
     }
   ];
 

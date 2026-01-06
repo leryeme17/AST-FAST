@@ -24,17 +24,17 @@ export const Specs = () => {
     {
       id: "01",
       title: "Dimensions",
-      text: "Max 25x25x25cm cube. Strictly enforced during scrutineering."
+      text: "Max 20x30x15cm cube. Strictly enforced during scrutineering."
     },
     {
       id: "02",
       title: "Track Surface",
-      text: "Vinyl matte finish. 20mm black line on white substrate."
+      text: "Black line on white substrate. With 8 different tracks used over the season."
     },
     {
       id: "03",
-      title: "Scoring",
-      text: "Time trial format. +5s penalty for manual resets."
+      title: "Time Trials",
+      text: "3 minutes per run in all phases except for the final with 5 minutes."
     }
   ];
 
