@@ -48,7 +48,7 @@ export const TechSection = () => {
                 
                 {/* Specification Book Link */}
                 <a 
-                    href={specBookUrl}
+                    href={specBookURL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative inline-flex items-center gap-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 font-bold uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(220,38,38,0.5)] overflow-hidden"
