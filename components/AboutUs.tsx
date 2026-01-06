@@ -37,11 +37,10 @@ export const AboutUs = () => {
         {/* Content Container */}
         <div className={`space-y-6 text-neutral-400 leading-relaxed text-lg transition-all duration-500 overflow-hidden ${isExpanded ? 'max-h-[1000px]' : 'max-h-[150px] md:max-h-none'}`}>
             <p>
-                We are a passionate community of robotics enthusiasts, engineers, and educators dedicated to promoting STEM education through competitive robotics. Since 2022, we've been organizing premier line-following robot competitions that challenge participants to push the boundaries of autonomous navigation and control systems.
+                The Autonomous Systems Technologies Club (AST Club) is the first and only scientific club of the National Higher School Of Autonomous Systems Technologies. Founded in 2024, it is the student-led hub for innovation in autonomous and intelligent systems, we unite students passionate about pushing the boundaries of what machines can perceive, decide, and execute independently. Our focus is on the core technologies that enable autonomy: robotics, embedded systems, real-time control, and artificial intelligence.
             </p>
             <p>
-                Our events bring together students, hobbyists, and professionals to share knowledge, compete fairly, and celebrate the exciting world of robotics and automation. We believe in open-source collaboration and the spirit of friendly competition to drive innovation in the field of embedded systems and AI.
-            </p>
+                The club's mission is to provide a practical engineering environment where members develop deep technical expertise, professional skills, and teamwork through collaborative hands-on projects and specialized workshops, we exist to transform theoretical knowledge into applied engineering, preparing the next generation of innovators in the field of autonomous technologies.
         </div>
 
         {/* Read More Button (Mobile Only) */}
