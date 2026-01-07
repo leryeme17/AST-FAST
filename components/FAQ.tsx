@@ -54,6 +54,10 @@ export const FAQ = () => {
       answer: "Robots must be fully autonomous with maximum dimensions of 20cm x 30cm x 15cm. They should use sensors (infrared, optical, or camera-based) to follow the track line. Any microcontroller platform is allowed (Arduino, Raspberry Pi, etc.)."
     },
     {
+      question: "When and where is the event taking place? ",
+      answer: "The event will be held on 13rd February at the national higher school of autonomous systems technologies."
+    },
+    {
       question: "How do I register my team?",
       answer: "Complete the registration form above with your team details. Then follow us on Instagram for more announcements about sending emails for confirmation."
     },
@@ -71,7 +75,7 @@ export const FAQ = () => {
     },
     {
         question: "What should I bring to the event?",
-        answer: "Bring your robot, spare batteries, chargers, laptops for coding, tools for repairs, and extension cords. Power strips will be provided in the pit area."
+        answer: "Bring your robot, spare batteries, chargers, laptops for coding, tools for repairs, and extension cords."
     },
     {
         question: "What is the qualification process?",

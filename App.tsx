@@ -33,31 +33,32 @@ function App() {
           <div id="event">
              <AboutCompetition />
           </div>
-          
-          <TechSection />
-          
+
           {/* Added IDs for navigation scrolling */}
           <div id="specs">
             <Specs />
           </div>
-          <div id="faq">
-            <FAQ />
-          </div>
           
-          {/* History moved above About Us */}
-          <div id="history">
-            <History />
-          </div>
+          <TechSection />
           
-          <div id="about">
-            <AboutUs />
-          </div>
-
           {/* Registration moved before Follow Us */}
           <div id="register">
             <RegistrationForm />
           </div>
 
+          <div id="about">
+            <AboutUs />
+          </div>
+
+          {/* History moved above About Us */}
+          <div id="history">
+            <History />
+          </div>
+
+          <div id="faq">
+            <FAQ />
+          </div>
+          
           <FollowUs />
         </div>
 

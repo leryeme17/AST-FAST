@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Flag, ChevronRight, Timer } from 'lucide-react';
+import bgImage from '../pics/new-bg.jpg';
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,7 +19,7 @@ export const Hero = () => {
            To use your specific uploaded image, place it in your public folder and update the src below (e.g., src="/your-robot-image.jpg")
         */}
         <img 
-          src="https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?q=80&w=2070&auto=format&fit=crop" 
+          src={bgImage}
           alt="Robot Chassis" 
           className="w-full h-full object-cover opacity-50 grayscale-[20%]"
         />
@@ -55,7 +56,7 @@ export const Hero = () => {
           <button onClick={() => document.getElementById('register')?.scrollIntoView({ behavior: 'smooth' })} className="group relative bg-red-600 hover:bg-red-700 text-white px-10 py-5 font-bold text-xl transition-all transform hover:scale-105 -skew-x-12 shadow-[0_0_20px_rgba(220,38,38,0.5)]">
             <div className="flex items-center gap-3 skew-x-12">
                 <Flag className="w-6 h-6" />
-                <span>START ENGINE</span>
+                <span>JOIN THE RACE</span>
             </div>
             {/* Button Shine Effect */}
             <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1s_infinite]"></div>

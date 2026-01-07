@@ -1,11 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Instagram, Linkedin } from 'lucide-react';
+import { Instagram, Linkedin, Facebook, Mail } from 'lucide-react';
 import astlogo from '../pics/white-logo.png';
 
 export const FollowUs = () => {
     const socialLinks = [
         { icon: Instagram, href: "https://www.instagram.com/ast_.club/", label: "Instagram" },
         { icon: Linkedin, href: "https://www.linkedin.com/company/autonomous-systems-tech-club/", label: "LinkedIn" },
+        { icon: Facebook, href: "https://www.facebook.com/share/1KjgjxFTVb/", label: "Facebook" },
+        { icon: Mail, href: "mailto:autonomous.systems.tech.club@gmail.com", label: "Email" },
     ];
 
     const [isVisible, setIsVisible] = useState(false);

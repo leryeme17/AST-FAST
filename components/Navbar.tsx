@@ -96,7 +96,7 @@ export const Navbar = () => {
                 onClick={() => scrollToSection('register')}
                 className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 font-bold uppercase italic tracking-wider text-sm transition-all hover:shadow-[0_0_15px_rgba(220,38,38,0.5)] transform hover:-translate-y-0.5"
              >
-                JOIN RACE
+                JOIN THE RACE
              </button>
           </div>
 
@@ -138,7 +138,7 @@ export const Navbar = () => {
                  onClick={() => scrollToSection('register')}
                  className="w-full text-center px-4 py-3 mt-2 text-sm font-black italic uppercase tracking-widest text-white bg-red-600 hover:bg-red-700 transition-all shadow-[0_0_10px_rgba(220,38,38,0.3)]"
                >
-                 JOIN RACE
+                 JOIN THE RACE
              </button>
           </div>
           {/* Bottom decorative bar */}
