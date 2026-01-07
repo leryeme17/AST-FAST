@@ -37,11 +37,15 @@ export const Chatbot = () => {
     try {
       const API_KEY = "AIzaSyCzQkiNjWZlFt855l0BVTTp72hq2n_NlC4";
       
+      console.log("Sending request to Gemini API...");
+      
       // Build conversation history for context
       const contents = chatHistory.current.map(msg => ({
         role: msg.role === 'user' ? 'user' : 'model',
         parts: [{ text: msg.text }]
       }));
+
+      console.log("Contents:", contents);
 
       const response = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`,
@@ -92,11 +96,17 @@ export const Chatbot = () => {
         }
       );
 
+      console.log("Response status:", response.status);
+
       if (!response.ok) {
-        throw new Error(`API Error: ${response.status}`);
+        const errorData = await response.json();
+        console.error("API Error Response:", errorData);
+        throw new Error(`API Error: ${response.status} - ${JSON.stringify(errorData)}`);
       }
 
       const data = await response.json();
+      console.log("API Response:", data);
+      
       const responseText = data.candidates?.[0]?.content?.parts?.[0]?.text;
       
       if (responseText) {
@@ -104,13 +114,14 @@ export const Chatbot = () => {
         setMessages(prev => [...prev, botMsg]);
         chatHistory.current.push(botMsg);
       } else {
+        console.error("No response text found in:", data);
         throw new Error('No response from API');
       }
     } catch (error) {
       console.error("Chat Error:", error);
       setMessages(prev => [...prev, { 
         role: 'model', 
-        text: "Sorry, I'm having trouble connecting right now. Please try again." 
+        text: `Error: ${error instanceof Error ? error.message : 'Connection failed'}. Check console for details.` 
       }]);
     } finally {
       setIsLoading(false);
